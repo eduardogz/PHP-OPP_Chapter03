@@ -1,5 +1,9 @@
 <?php
-
+/**
+ * 
+ * @author edu
+ *
+ */
 class ShopProduct {
 	private $title;
 	private $producerFirstName;
