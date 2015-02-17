@@ -11,6 +11,13 @@ class ShopProduct {
 	protected $price;
 	private $discount = 0;
 	
+	/**
+	 * 
+	 * @param Product Title $title
+	 * @param Producer's first name $firstName
+	 * @param Producer's last name $mainName
+	 * @param Product price $price
+	 */
 	function __construct($title, $firstName, $mainName, $price){
 		$this->title = $title;
 		$this->producerFirstName = $firstName;
@@ -18,10 +25,16 @@ class ShopProduct {
 		$this->price = $price;
 	}
 	
+	/**
+	 * 
+	 */
 	public function getProducerFirstName() {
 		return $this->producerFirstName;
 	}
 	
+	/**
+	 * 
+	 */
 	public function getProducerMainName() {
 		return $this->producerMainName;
 	}
@@ -97,7 +110,6 @@ class BookProduct extends ShopProduct{
 
 //$product1 = new ShopProduct("Ay caramba!", "Bart", "Simpson", 1000);
 //print $product1->getProducer();
-
 $book1 = new BookProduct("Ay Caramba!", "Bart", "Simpson", 2000, 864);
 print $book1->getSummaryLine();
 
